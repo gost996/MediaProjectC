@@ -1,0 +1,190 @@
+fileFormatVersion: 2
+guid: 921a4f76e13b59041a124d8b6df4fe46
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Body_Low:Object001
+    100002: Boots_Low:Plane006
+    100004: Boots_Low:Plane007
+    100006: ClothesLope_Low:Plane004
+    100008: ClothesShirt_Low:Plane003
+    100010: ClothesTrouser_Low:Plane005
+    100012: Eyes_Low2:Eyes_Low
+    100014: Hair_Low:back
+    100016: Hair_Low:Bong
+    100018: Hair_Low:front
+    100020: Hair_Low:FrontHair
+    100022: Hair_Low:Object011
+    100024: Hair_Low:side
+    100026: Mangun_Low:Mangun_Low
+    100028: Sword_Low:Plane002
+    100030: SwordSheath_Low:Plane001
+    100032: //RootNode
+    400000: Body_Low:Object001
+    400002: Boots_Low:Plane006
+    400004: Boots_Low:Plane007
+    400006: ClothesLope_Low:Plane004
+    400008: ClothesShirt_Low:Plane003
+    400010: ClothesTrouser_Low:Plane005
+    400012: Eyes_Low2:Eyes_Low
+    400014: Hair_Low:back
+    400016: Hair_Low:Bong
+    400018: Hair_Low:front
+    400020: Hair_Low:FrontHair
+    400022: Hair_Low:Object011
+    400024: Hair_Low:side
+    400026: Mangun_Low:Mangun_Low
+    400028: Sword_Low:Plane002
+    400030: SwordSheath_Low:Plane001
+    400032: //RootNode
+    2100000: Body_Low_Object001Mat
+    2100002: Boots_Low_Plane006Mat
+    2100004: Boots_Low_Plane007Mat
+    2100006: ClothesLope_Low_Plane004Mat
+    2100008: ClothesShirt_Low_Plane003Mat
+    2100010: ClothesTrouser_Low_Plane005Mat
+    2100012: Eyes_Low2_Eyes_LowMat
+    2100014: Hair_Low_backMat
+    2100016: Hair_Low_BongMat
+    2100018: Hair_Low_frontMat
+    2100020: Hair_Low_FrontHairMat
+    2100022: Hair_Low_Object011Mat
+    2100024: Hair_Low_sideMat
+    2100026: Mangun_Low_Mangun_LowMat
+    2100028: Sword_Low_Plane002Mat
+    2100030: SwordSheath_Low_Plane001Mat
+    2300000: Body_Low:Object001
+    2300002: Boots_Low:Plane006
+    2300004: Boots_Low:Plane007
+    2300006: ClothesLope_Low:Plane004
+    2300008: ClothesShirt_Low:Plane003
+    2300010: ClothesTrouser_Low:Plane005
+    2300012: Eyes_Low2:Eyes_Low
+    2300014: Hair_Low:back
+    2300016: Hair_Low:Bong
+    2300018: Hair_Low:front
+    2300020: Hair_Low:FrontHair
+    2300022: Hair_Low:Object011
+    2300024: Hair_Low:side
+    2300026: Mangun_Low:Mangun_Low
+    2300028: Sword_Low:Plane002
+    2300030: SwordSheath_Low:Plane001
+    3300000: Body_Low:Object001
+    3300002: Boots_Low:Plane006
+    3300004: Boots_Low:Plane007
+    3300006: ClothesLope_Low:Plane004
+    3300008: ClothesShirt_Low:Plane003
+    3300010: ClothesTrouser_Low:Plane005
+    3300012: Eyes_Low2:Eyes_Low
+    3300014: Hair_Low:back
+    3300016: Hair_Low:Bong
+    3300018: Hair_Low:front
+    3300020: Hair_Low:FrontHair
+    3300022: Hair_Low:Object011
+    3300024: Hair_Low:side
+    3300026: Mangun_Low:Mangun_Low
+    3300028: Sword_Low:Plane002
+    3300030: SwordSheath_Low:Plane001
+    4300000: Body_Low:Object001
+    4300002: Boots_Low:Plane006
+    4300004: Boots_Low:Plane007
+    4300006: ClothesLope_Low:Plane004
+    4300008: ClothesShirt_Low:Plane003
+    4300010: ClothesTrouser_Low:Plane005
+    4300012: Eyes_Low2:Eyes_Low
+    4300014: Hair_Low:back
+    4300016: Hair_Low:Bong
+    4300018: Hair_Low:front
+    4300020: Hair_Low:FrontHair
+    4300022: Hair_Low:Object011
+    4300024: Hair_Low:side
+    4300026: Mangun_Low:Mangun_Low
+    4300028: Sword_Low:Plane002
+    4300030: SwordSheath_Low:Plane001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

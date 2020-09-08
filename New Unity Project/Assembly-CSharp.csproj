@@ -276,10 +276,11 @@
     <Compile Include="Assets\Scripts\00.Interface\LoadScene.cs" />
     <Compile Include="Assets\Scripts\01.Start\LoadSceneWithFade.cs" />
     <Compile Include="Assets\Scripts\02.Lobby\LoadSceneWithLoading.cs" />
-    <Compile Include="Assets\Scripts\02.Lobby\RotateCharacter.cs" />
-    <Compile Include="Assets\Scripts\02.Lobby\SelectButton.cs" />
+    <Compile Include="Assets\Scripts\02.Lobby\RotationManager.cs" />
     <Compile Include="Assets\Scripts\02.Lobby\SelectManager.cs" />
-    <Compile Include="Assets\Scripts\02.Lobby\StatusView.cs" />
+    <Compile Include="Assets\Scripts\02.Lobby\StatusViewSystem.cs" />
+    <Compile Include="Assets\Scripts\02.Lobby\SystemManager.cs" />
+    <Compile Include="Assets\Scripts\02.Lobby\TextEffectSystem.cs" />
     <Compile Include="Assets\Scripts\02.Lobby\lCharacter.cs" />
     <Compile Include="Assets\Scripts\03.Ingame\ConvertCameraView.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />

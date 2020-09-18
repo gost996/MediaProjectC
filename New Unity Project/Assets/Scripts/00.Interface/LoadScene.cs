@@ -7,10 +7,15 @@ using UnityEngine.SceneManagement;
 public abstract class LoadScene : MonoBehaviour
 {
     [Header("Load Setting")]
-    public string nextScene;
+    protected string nextScene = "Ingame_Colosseum";
 
     protected virtual IEnumerator LoadNextScene()
     {
         yield return null;
+    }
+
+    public void SetNextScene(string sceneName)
+    {
+        nextScene = sceneName;
     }
 }

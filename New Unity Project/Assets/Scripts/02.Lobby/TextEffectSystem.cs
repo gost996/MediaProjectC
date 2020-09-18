@@ -5,17 +5,46 @@ using UnityEngine.UI;
 
 public class TextEffectSystem : MonoBehaviour
 {
-    [Header("Text UI")]
-    public Text target;
+    [Header("STE Control")]
+    public List<Text> target_STE = new List<Text>();
+    public float typingTime_STE;
 
-    public IEnumerator TypingEffect(string contentText)
+    [Header("DTE Control")]
+    public List<Text> target_RTE = new List<Text>();
+    public float typingTime_DTE;
+
+    public IEnumerator SequentialTypingEffect(string contentText, int index)
     {
         string result = "";
         for(int i = 0; i < contentText.Length; i++)
         {
             result += contentText.Substring(i, 1);
-            target.text = result;
-            yield return new WaitForSeconds(0.025f);
+            target_STE[index].text = result;
+            yield return new WaitForSeconds(typingTime_STE);
+        }
+    }
+
+    public IEnumerator DotTypingEffect(string contentText, int index)
+    {
+        int count = 0;
+        while (true)
+        {
+            switch (count)
+            {
+                case 0:
+                    target_RTE[index].text = contentText + ".";
+                    count++;
+                    break;
+                case 1:
+                    target_RTE[index].text = contentText + "..";
+                    count++;
+                    break;
+                case 2:
+                    target_RTE[index].text = contentText + "...";
+                    count = 0;
+                    break;
+            }
+            yield return new WaitForSeconds(typingTime_DTE);
         }
     }
 }

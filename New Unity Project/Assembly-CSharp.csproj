@@ -283,6 +283,7 @@
     <Compile Include="Assets\Scripts\02.Lobby\TextEffectSystem.cs" />
     <Compile Include="Assets\Scripts\02.Lobby\lCharacter.cs" />
     <Compile Include="Assets\Scripts\03.Ingame\ConvertCameraView.cs" />
+    <Compile Include="Assets\Scripts\03.Ingame\PauseSystem.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <None Include="Assets\Invector-3rdPersonController\Basic Locomotion\README_Basic.txt" />

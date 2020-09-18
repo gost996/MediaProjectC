@@ -6,12 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Start.unity
+    path: Assets/Scenes/Title.unity
     guid: 39f340afd62abf040931ba7c78b21d75
   - enabled: 1
     path: Assets/Scenes/Lobby.unity
     guid: 3a0108b84145e174898adf450003c3c7
   - enabled: 1
-    path: Assets/Scenes/Ingame.unity
+    path: Assets/Scenes/Ingame_Bamboo.unity
     guid: f7e801b68943d1a42bfddd24f71eb487
+  - enabled: 1
+    path: Assets/Scenes/Ingame_Colosseum.unity
+    guid: 23f160a74bc40b1499679033c9647f8f
   m_configObjects: {}

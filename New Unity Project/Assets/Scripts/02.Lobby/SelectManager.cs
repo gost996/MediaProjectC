@@ -45,7 +45,7 @@ public class SelectManager : MonoBehaviour
         RotationManager.Instance.SetRotationManager(nowCharacter.gameObject);
         standardRT = selectPC[0].GetComponent<Transform>().rotation;
         sv.SetlCharacter(nowCharacter);
-        te.StartCoroutine(te.TypingEffect(nowCharacter.contentText));
+        te.StartCoroutine(te.SequentialTypingEffect(nowCharacter.contentText, 0));
     }
 
     public void SetCharacter(int i)
@@ -58,6 +58,6 @@ public class SelectManager : MonoBehaviour
         nowCharacter = _pc;
         RotationManager.Instance.SetRotationManager(nowCharacter.gameObject);
         sv.SetlCharacter(nowCharacter);
-        te.StartCoroutine(te.TypingEffect(nowCharacter.contentText));
+        te.StartCoroutine(te.SequentialTypingEffect(nowCharacter.contentText, 0));
     }
 }

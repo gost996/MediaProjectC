@@ -33,7 +33,6 @@ public class SelectManager : MonoBehaviour
     {
         if (_instance == null) _instance = this;
         else if (_instance != this) Destroy(gameObject);
-        DontDestroyOnLoad(gameObject);
 
         sv = SystemManager.Instance.svSystem;
         te = SystemManager.Instance.teSystem;
@@ -45,7 +44,8 @@ public class SelectManager : MonoBehaviour
         RotationManager.Instance.SetRotationManager(nowCharacter.gameObject);
         standardRT = selectPC[0].GetComponent<Transform>().rotation;
         sv.SetlCharacter(nowCharacter);
-        te.StartCoroutine(te.SequentialTypingEffect(nowCharacter.contentText, 0));
+
+        SystemManager.Instance.ControlSequentialTypingEffect(nowCharacter.contentText, 0);
     }
 
     public void SetCharacter(int i)
@@ -58,6 +58,7 @@ public class SelectManager : MonoBehaviour
         nowCharacter = _pc;
         RotationManager.Instance.SetRotationManager(nowCharacter.gameObject);
         sv.SetlCharacter(nowCharacter);
-        te.StartCoroutine(te.SequentialTypingEffect(nowCharacter.contentText, 0));
+
+        SystemManager.Instance.ControlSequentialTypingEffect(nowCharacter.contentText, 0);
     }
 }

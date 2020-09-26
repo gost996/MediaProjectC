@@ -13,6 +13,13 @@ public class TextEffectSystem : MonoBehaviour
     public List<Text> target_RTE = new List<Text>();
     public float typingTime_DTE;
 
+    [HideInInspector] public IEnumerator[] runningSTE;
+
+    private void Awake()
+    {
+        runningSTE = new IEnumerator[target_RTE.Count];
+    }
+
     public IEnumerator SequentialTypingEffect(string contentText, int index)
     {
         string result = "";

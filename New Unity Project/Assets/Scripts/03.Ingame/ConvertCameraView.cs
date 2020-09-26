@@ -7,36 +7,46 @@ using UnityEngine.UI;
 
 public class ConvertCameraView : MonoBehaviour
 {
-    public vThirdPersonCamera vCam;
-    public vThirdPersonCameraState vCamStates;
+    [Header("QuarterView Camera")]
+    public vThirdPersonCamera QuarterViewViewCam;
+    public float QV_Distance;
+    public float QV_Height;
 
-    public float FDDistance;
-    public float FDHeight;
-    public float FADistance;
-    public float FAHeight;
+    private vThirdPersonCameraState camStates;
+
+    [Header("ShoulderView Camera")]
+    public Camera ShoulderViewViewCam;
+    public float SV_x;
+    public float SV_y;
+    public float SV_z;
+
+    private bool isQuarterView = true;
 
     Text currentModeText;
 
     private void Start()
     {
-        vCamStates = vCam.CameraStateList.tpCameraStates.Find(delegate (vThirdPersonCameraState obj) { return obj.Name.Equals("Default");});
+        camStates = QuarterViewViewCam.CameraStateList.tpCameraStates.Find(delegate (vThirdPersonCameraState obj) { return obj.Name.Equals("Default");});
+        camStates.defaultDistance = QV_Distance;
+        camStates.height = QV_Height;
+
+        ShoulderViewViewCam.transform.position = new Vector3(SV_x, SV_y, SV_z);
+
         currentModeText = GetComponentInChildren<Text>();
+
+        QuarterViewViewCam.gameObject.SetActive(isQuarterView);
+        ShoulderViewViewCam.gameObject.SetActive(!isQuarterView);
+
+        currentModeText.text = "Quarter View";
     }
     public void ConvertCameraMode()
     {
-        if(vCamStates.cameraMode == TPCameraMode.FixedAngle)
-        {
-            vCamStates.cameraMode = TPCameraMode.FreeDirectional;
-            vCamStates.defaultDistance = FDDistance;
-            vCamStates.height = FDHeight;
-            currentModeText.text = vCamStates.cameraMode.ToString();
-        }
-        else if(vCamStates.cameraMode == TPCameraMode.FreeDirectional)
-        {
-            vCamStates.cameraMode = TPCameraMode.FixedAngle;
-            vCamStates.defaultDistance = FADistance;
-            vCamStates.height = FAHeight;
-            currentModeText.text = vCamStates.cameraMode.ToString();
-        }
+        isQuarterView = !isQuarterView;
+
+        if(isQuarterView) currentModeText.text = "Quarter View";
+        else currentModeText.text = "Shoulder View";
+
+        QuarterViewViewCam.gameObject.SetActive(isQuarterView);
+        ShoulderViewViewCam.gameObject.SetActive(!isQuarterView);
     }
 }

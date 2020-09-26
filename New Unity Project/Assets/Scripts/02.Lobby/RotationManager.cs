@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class RotationManager : MonoBehaviour
 {
-    [Header("Rotation Pivot")]
+    [Header("Rotation Input")]
     public RectTransform pivot;
+    public Camera cam;
+    public RectTransform touchPannel;
+
     private GameObject pc;
     private Transform pcTransform;
     private Vector3 centerRotation;
@@ -36,7 +39,6 @@ public class RotationManager : MonoBehaviour
             Destroy(gameObject);
         }
         // 아래의 함수를 사용하여 씬이 전환되더라도 선언되었던 인스턴스가 파괴되지 않는다.
-        DontDestroyOnLoad(gameObject);
     }
 
     public void SetRotationManager(GameObject _pc)
@@ -49,6 +51,7 @@ public class RotationManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (Input.GetMouseButtonDown(0)) prevCenter = Input.mousePosition.x;
         if (Input.GetMouseButton(0))
         {

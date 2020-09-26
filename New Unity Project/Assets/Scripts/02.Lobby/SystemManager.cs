@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SystemManager : MonoBehaviour
 {
@@ -32,10 +33,18 @@ public class SystemManager : MonoBehaviour
             Destroy(gameObject);
         }
         // 아래의 함수를 사용하여 씬이 전환되더라도 선언되었던 인스턴스가 파괴되지 않는다.
-        DontDestroyOnLoad(gameObject);
 
         svSystem = GetComponent<StatusViewSystem>();
         teSystem = GetComponent<TextEffectSystem>();
+    }
+
+    public void ControlSequentialTypingEffect(string text, int index)
+    {
+        if (teSystem.runningSTE[index] != null) teSystem.StopCoroutine(teSystem.runningSTE[index]);
+
+        IEnumerator _STE = teSystem.SequentialTypingEffect(text, index);
+        teSystem.runningSTE[index] = _STE; 
+        teSystem.StartCoroutine(_STE);
     }
 
 }

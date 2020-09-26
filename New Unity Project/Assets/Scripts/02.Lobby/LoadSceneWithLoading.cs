@@ -11,6 +11,9 @@ public class LoadSceneWithLoading : LoadScene
     public Slider loadingBar;
     public Text loadingText;
 
+    public Image loadingImagePannel;
+    public List<Sprite> loadingImages = new List<Sprite>();
+
     [Header("Time Control")]
     public float limitTime;
     public float delayTime;
@@ -23,6 +26,8 @@ public class LoadSceneWithLoading : LoadScene
 
     protected override IEnumerator LoadNextScene()
     {
+        loadingImagePannel.sprite = loadingImages[Random.Range(0, loadingImages.Count)];
+
         loadingPannel.gameObject.SetActive(true);
         SystemManager.Instance.teSystem.StartCoroutine(SystemManager.Instance.teSystem.DotTypingEffect(loadingText.text, 0)); 
 

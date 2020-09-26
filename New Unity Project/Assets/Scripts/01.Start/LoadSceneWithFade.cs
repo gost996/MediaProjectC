@@ -9,9 +9,9 @@ public class LoadSceneWithFade : LoadScene
     [Header("Setting")]
     public float fadeTime;
 
-    void Update()
+    public void LoadingWithClick()
     {
-        if (Input.GetMouseButtonDown(0)) StartCoroutine(LoadNextScene());
+        StartCoroutine(LoadNextScene());
     }
 
     protected override IEnumerator LoadNextScene()

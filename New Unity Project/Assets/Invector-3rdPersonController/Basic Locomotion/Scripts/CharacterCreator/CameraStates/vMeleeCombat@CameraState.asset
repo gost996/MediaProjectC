@@ -17,10 +17,10 @@ MonoBehaviour:
   - Name: Default
     forward: -1
     right: 0
-    defaultDistance: 2
+    defaultDistance: 5
     maxDistance: 8
     minDistance: 0.6
-    height: 2
+    height: 3
     smooth: 10
     smoothDamp: 4
     xMouseSensitivity: 3
@@ -40,7 +40,7 @@ MonoBehaviour:
       positionPoint: {x: 0, y: 1, z: -10}
       eulerAngle: {x: -0, y: 0, z: 0}
       freeRotation: 0
-    cameraMode: 0
+    cameraMode: 1
   - Name: Crouch
     forward: -1
     right: 0.4

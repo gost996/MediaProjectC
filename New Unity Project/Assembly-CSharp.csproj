@@ -282,6 +282,7 @@
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <None Include="Assets\ImportedAsset\Catartsys\LargeWater_URP\Catartsys_LargeWater_URP_Doc.txt" />
      <None Include="Assets\ImportedAsset\Rocks and Boulders 2\Shaders\Blend SM2.shader" />
+     <None Include="Assets\ImportedAsset\laxer tree pkg\README.txt" />
      <None Include="Assets\Invector-3rdPersonController\Basic Locomotion\README_Basic.txt" />
      <None Include="Assets\ImportedAsset\Rocks and Boulders 2\Shaders\Blend SM3.shader" />
      <None Include="Assets\ImportedAsset\Rocks and Boulders 2\Shaders\shader info.txt" />

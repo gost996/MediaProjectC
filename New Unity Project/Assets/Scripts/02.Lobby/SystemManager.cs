@@ -7,6 +7,7 @@ public class SystemManager : MonoBehaviour
 {
     [HideInInspector] public StatusViewSystem svSystem;
     [HideInInspector] public TextEffectSystem teSystem;
+    [HideInInspector] public UIFadeSystem ufSystem;
     
     private static SystemManager _instance;
     public static SystemManager Instance
@@ -36,6 +37,12 @@ public class SystemManager : MonoBehaviour
 
         svSystem = GetComponent<StatusViewSystem>();
         teSystem = GetComponent<TextEffectSystem>();
+        ufSystem = GetComponent<UIFadeSystem>();
+    }
+
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0)) teSystem.StopSequentialTypingEffectByClick();
     }
 
     public void ControlSequentialTypingEffect(string text, int index)
@@ -46,5 +53,4 @@ public class SystemManager : MonoBehaviour
         teSystem.runningSTE[index] = _STE; 
         teSystem.StartCoroutine(_STE);
     }
-
 }

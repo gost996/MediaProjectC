@@ -9,19 +9,24 @@ public class TextEffectSystem : MonoBehaviour
     public List<Text> target_STE = new List<Text>();
     public float typingTime_STE;
 
+    [HideInInspector] public IEnumerator[] runningSTE;
+    string[] contentList;
+
     [Header("DTE Control")]
     public List<Text> target_RTE = new List<Text>();
     public float typingTime_DTE;
 
-    [HideInInspector] public IEnumerator[] runningSTE;
 
     private void Awake()
     {
         runningSTE = new IEnumerator[target_RTE.Count];
+        contentList = new string[target_RTE.Count];
     }
 
     public IEnumerator SequentialTypingEffect(string contentText, int index)
     {
+        contentList[index] = contentText;
+
         string result = "";
         for(int i = 0; i < contentText.Length; i++)
         {
@@ -29,6 +34,19 @@ public class TextEffectSystem : MonoBehaviour
             target_STE[index].text = result;
             yield return new WaitForSeconds(typingTime_STE);
         }
+    }
+
+    public void StopSequentialTypingEffectByClick()
+    {
+        for (int i = 0; i < runningSTE.Length; i++)
+        {
+            if(runningSTE[i] != null)
+            {
+                StopCoroutine(runningSTE[i]);
+                runningSTE[i] = null;
+                target_STE[i].text = contentList[i];
+            }
+        }  
     }
 
     public IEnumerator DotTypingEffect(string contentText, int index)

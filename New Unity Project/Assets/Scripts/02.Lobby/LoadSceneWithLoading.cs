@@ -26,6 +26,8 @@ public class LoadSceneWithLoading : LoadScene
 
     protected override IEnumerator LoadNextScene()
     {
+        SystemManager.Instance.ufSystem.StartFade(0);
+
         loadingImagePannel.sprite = loadingImages[Random.Range(0, loadingImages.Count)];
 
         loadingPannel.gameObject.SetActive(true);

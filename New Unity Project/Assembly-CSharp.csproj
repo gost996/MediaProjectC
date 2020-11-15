@@ -55,6 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AllSkyFree\AllSkyFree_Menu.cs" />
      <Compile Include="Assets\ImportedAsset\Catartsys\LargeWater_URP\Scripts\LargeWater_Grids_instanciator.cs" />
      <Compile Include="Assets\ImportedAsset\Rocks and Boulders 2\Shaders\RotateGameObject.cs" />
      <Compile Include="Assets\Invector-3rdPersonController\Add-ons\Controller_Mobile\Basic\Scripts\InvectorJoystick.cs" />
@@ -285,6 +286,7 @@
      <None Include="Assets\ImportedAsset\Rocks and Boulders 2\Shaders\Blend SM2.shader" />
      <None Include="Assets\ImportedAsset\laxer tree pkg\README.txt" />
      <None Include="Assets\Invector-3rdPersonController\Basic Locomotion\README_Basic.txt" />
+     <None Include="Assets\AllSkyFree\AllSkyFree_Readme.txt" />
      <None Include="Assets\ImportedAsset\Rocks and Boulders 2\Shaders\Blend SM3.shader" />
      <None Include="Assets\ImportedAsset\Rocks and Boulders 2\Shaders\shader info.txt" />
      <None Include="Assets\Invector-3rdPersonController\Melee Combat\3DModels\Other\Wires\Shaders\alpha_2sided.shader" />

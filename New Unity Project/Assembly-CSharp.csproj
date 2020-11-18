@@ -268,6 +268,11 @@
      <Compile Include="Assets\Invector-3rdPersonController\Melee Combat\Scripts\WaypointSystem\vPoint.cs" />
      <Compile Include="Assets\Invector-3rdPersonController\Melee Combat\Scripts\WaypointSystem\vWaypoint.cs" />
      <Compile Include="Assets\Invector-3rdPersonController\Melee Combat\Scripts\WaypointSystem\vWaypointArea.cs" />
+     <Compile Include="Assets\MeleeWeaponTrail\Example\Scripts\LookAtTarget.cs" />
+     <Compile Include="Assets\MeleeWeaponTrail\Example\Scripts\MouseMove.cs" />
+     <Compile Include="Assets\MeleeWeaponTrail\Example\Scripts\SwooshTest.cs" />
+     <Compile Include="Assets\MeleeWeaponTrail\Scripts\Interpolate.cs" />
+     <Compile Include="Assets\MeleeWeaponTrail\Scripts\MeleeWeaponTrail.cs" />
      <Compile Include="Assets\Scripts\00.Interface\LoadScene.cs" />
      <Compile Include="Assets\Scripts\01.Start\LoadSceneWithFade.cs" />
      <Compile Include="Assets\Scripts\02.Lobby\LoadSceneWithLoading.cs" />
@@ -287,6 +292,7 @@
      <None Include="Assets\ImportedAsset\laxer tree pkg\README.txt" />
      <None Include="Assets\Invector-3rdPersonController\Basic Locomotion\README_Basic.txt" />
      <None Include="Assets\AllSkyFree\AllSkyFree_Readme.txt" />
+     <None Include="Assets\MeleeWeaponTrail\README.txt" />
      <None Include="Assets\ImportedAsset\Rocks and Boulders 2\Shaders\Blend SM3.shader" />
      <None Include="Assets\ImportedAsset\Rocks and Boulders 2\Shaders\shader info.txt" />
      <None Include="Assets\Invector-3rdPersonController\Melee Combat\3DModels\Other\Wires\Shaders\alpha_2sided.shader" />

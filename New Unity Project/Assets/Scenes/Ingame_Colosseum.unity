@@ -7117,20 +7117,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1268710878}
     m_Modifications:
+    - target: {fileID: 3384638203952017301, guid: 8c28bcc0172341c4a8f9004f882a164d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5378754586739554860, guid: 8c28bcc0172341c4a8f9004f882a164d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.7
+      value: -0.118
       objectReference: {fileID: 0}
     - target: {fileID: 5378754586739554860, guid: 8c28bcc0172341c4a8f9004f882a164d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -17.7
+      value: 0.105
       objectReference: {fileID: 0}
     - target: {fileID: 5378754586739554860, guid: 8c28bcc0172341c4a8f9004f882a164d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.5
+      value: 0.006
       objectReference: {fileID: 0}
     - target: {fileID: 5378754586739554860, guid: 8c28bcc0172341c4a8f9004f882a164d,
         type: 3}
@@ -25611,9 +25616,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openCloseEvents: 0
-  openCloseWindow: 0
+  openCloseWindow: 1
   selectedToolbar: 0
-  defaultDamageEffect: {fileID: 120346, guid: b8f2fe1ee1a01724cb72f5b0e6bd2eef, type: 3}
+  defaultDamageEffect: {fileID: 4923083626863344659, guid: 6746a1e4b74ccda4493d25f3e2bef19c,
+    type: 3}
   customDamageEffects: []
 --- !u!114 &1162270782
 MonoBehaviour:
@@ -38617,9 +38623,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openCloseEvents: 0
-  openCloseWindow: 0
+  openCloseWindow: 1
   selectedToolbar: 0
-  defaultDamageEffect: {fileID: 120346, guid: b8f2fe1ee1a01724cb72f5b0e6bd2eef, type: 3}
+  defaultDamageEffect: {fileID: 4923083626863344659, guid: 6746a1e4b74ccda4493d25f3e2bef19c,
+    type: 3}
   customDamageEffects: []
 --- !u!114 &1712716479
 MonoBehaviour:

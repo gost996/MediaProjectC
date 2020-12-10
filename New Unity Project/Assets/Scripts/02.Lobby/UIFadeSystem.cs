@@ -22,7 +22,6 @@ public class UIFadeSystem : MonoBehaviour
             UIs[index].color = c;
             if (c.a >= 1f) c.a = 1f;
             yield return null;
-            Debug.Log("in " + c.a);
         }
         StartCoroutine(FadeOut(index)); 
     }
@@ -36,7 +35,6 @@ public class UIFadeSystem : MonoBehaviour
             UIs[index].color = c;
             if (c.a <= 0f) c.a = 0f;
             yield return null;
-            Debug.Log("out " + c.a);
         }
         StartCoroutine(FadeIn(index));
     }

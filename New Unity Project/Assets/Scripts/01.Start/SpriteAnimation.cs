@@ -12,10 +12,12 @@ public class SpriteAnimation : MonoBehaviour
         public int spriteNum;
         public float animTime;
         public Image target;
+        public Sprite[] sprites;
     }
 
     public SpriteForAnimation[] spriteList;
     public Image touchTheScreen;
+    public Button FadeButton;
 
     UIFadeSystem fadeSystem;
     string path;
@@ -27,21 +29,28 @@ public class SpriteAnimation : MonoBehaviour
 
         foreach(SpriteForAnimation sp in spriteList)
         {
-            path = "AnimationSprite/" + sp.spriteName + "/" + sp.spriteName + "_";
-            StartCoroutine(Animate(path, sp.spriteNum, sp.animTime, sp.target)); 
+            sp.sprites = new Sprite[sp.spriteNum];
+
+            path = sp.spriteName + "/" + sp.spriteName + "_";
+            
+            for (int i = 0; i < sp.spriteNum; i++)
+            {
+                Texture2D tx = Resources.Load(path + i) as Texture2D;
+                sp.sprites[i] = Sprite.Create(tx, new Rect(0f, 0f, tx.width, tx.height), new Vector2(0f, 0f));
+            }
+
+            StartCoroutine(Animate(sp.sprites, sp.spriteNum, sp.animTime, sp.target)); 
         }
     }
 
-    IEnumerator Animate(string _path, int _spriteNum, float _animTime, Image _target)
+    IEnumerator Animate(Sprite[] _spriteList, int _spriteNum, float _animTime, Image _target)
     {
         for(int i = 0; i < _spriteNum; i++)
         {
-            Texture2D tx = Resources.Load(_path + i) as Texture2D;
-            Sprite s = Sprite.Create(tx, new Rect(0f, 0f, tx.width, tx.height), new Vector2(0f, 0f));
-            _target.sprite = s;
-            Debug.Log(i);
+            _target.sprite = _spriteList[i];
             yield return new WaitForSeconds(_animTime / _spriteNum);
         }
+        FadeButton.gameObject.SetActive(true);
         touchTheScreen.gameObject.SetActive(true);
         fadeSystem.StartFade(0);
 
